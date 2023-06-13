@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="seasonsContainer container">
+        <h1>toggle between two images</h1>
+        <img src="https://media1.popsugar-assets.com/files/thumbor/n8bUt1yPUD0zvO0XmWNFuVj763k/685x0:3345x2660/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/01/07/726/n/1922441/419ff9b05e14b139162ef6.64727550_/i/Best-Winter-Photos.jpg" alt="" class="winterPic">
+
+        <img src="https://hips.hearstapps.com/hmg-prod/images/when-does-summer-end-1651614198.jpg" alt="" class="summerPic hidden">
+    </div>
+    <button class="switchSeason" onclick="switchSeasons()">Switch Seasons</button>
+<hr>
+<div class="container fontColor">
+    <h1 class="coloredText">Color me please</h1>
+    <button class="colorButtons" onclick="changeColor('yellow')">Yellow</button>
+    <button class="colorButtons" onclick="changeColor('red')">Red</button>
+    <button class="colorButtons" onclick="changeColor('blue')">Blue</button>
+</div>
+<hr>
+    <div class="sizeContainer container">
+        <h1 class="size" style="font-size: 0px;">Change my size</h1>
+        <button class="increase" onclick="changeFontSize('big')">Increase Me</button>
+        <button class="decrease" onclick="changeFontSize('small')">Decrease Me</button>
+    </div>
+<hr>
+    <div class="hideMeContainer">
+        <h1 class="hideMeText">I'm here</h1>
+
+        <button class="hide" onclick="toggleHidden()">HIDE ME</button>
+    </div>
+<hr>
+    <div class="butterflyContainer container">
+        <h1>Being a catepillar is so boring. Can you help me?</h1>
+        <p class="bugTalk">I don't want to spend my life like this</p>
+        <img src="https://media.istockphoto.com/id/800451844/vector/cartoon-crying-caterpillar.jpg?s=612x612&w=0&k=20&c=bQJ-hE85QRgmRnq32k0hc4mDKUAmFJn7l4tA4j4Euu0=" alt="" class="catepillar">
+    </div>
+    <button class="evolve" onclick="evolve()">Evolve</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

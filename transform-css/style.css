@@ -1,0 +1,146 @@
+body{
+    margin: 0 auto;
+    width: 75%
+}
+
+.container{
+    margin: 10px 0;
+    min-height: 200px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 40px
+}
+
+img{
+    height: 200px;
+    z-index: 5;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes squirm {
+    from {
+        /* transform: translateX(-10vw); */
+    }
+    to {
+        transform: translateX(90vw);
+        /* transform: translateX(-100%); */
+    }
+}
+
+
+.squirm{
+    animation: squirm 20s;
+    /* animation-iteration-count: 4s; */
+}
+
+
+@keyframes draining {
+    from {
+        background-color: #5cddff;
+        
+    }
+    to {
+        background-color: white;
+        
+    }
+}
+
+.puddleContainer{
+    background-color: #5cddff;
+}
+
+
+.draining{
+    animation: draining 10s;
+}
+
+
+
+@keyframes waterRising {
+    from{
+        background-color: #79efe0;
+    z-index: -2;
+
+    }
+    to{
+    z-index: -2;
+
+        background-color: #79efe0;
+        transform: translateY(-100px);
+    }
+    
+}
+
+.water{
+    background-color: #79efe0;
+    height: 200px;
+    margin-top: -90px;
+    z-index: -2;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.waterRising{
+    animation: waterRising 5s forwards;
+}
+
+.sinking{
+    margin: 0 25%
+}
+
+
+.octopusContainer{
+    background-color: #36465d;
+    color: grey;
+}
+
+.octopus{
+    animation: squirm 5s timing-function delay iteration-count direction fill-mode;
+}
+
+
+@keyframes kaboom {
+    from{
+
+    }
+    to{
+        /* background-image: url('https://64.media.tumblr.com/1686a724a424593f45e24a88b58b22fb/tumblr_mt6g4rgeT41s5jjtzo1_400.gif'); */
+        transform: translateY(-2000%);
+        /* background-color: white; */
+    }
+}
+
+
+
+.redButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.explode{
+    animation: kaboom 1s forwards;
+    background-position: cover;
+}
+
+.redButtonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.buttonText{
+    text-align: center;
+    margin-top: 50px;
+}

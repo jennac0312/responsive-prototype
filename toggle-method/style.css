@@ -1,0 +1,23 @@
+.hidden{
+    display: none;
+}
+
+img{
+    height: 200px;
+}
+
+.container{
+    /* height: 300px */
+}
+
+.yellow{
+    color: yellow
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
