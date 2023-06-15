@@ -24,10 +24,10 @@ img{
 }
 
 @keyframes squirm {
-    from {
+    0% {
         /* transform: translateX(-10vw); */
     }
-    to {
+    100% {
         transform: translateX(90vw);
         /* transform: translateX(-100%); */
     }
@@ -35,7 +35,7 @@ img{
 
 
 .squirm{
-    animation: squirm 20s;
+    animation: squirm 20s ease-in-out infinite;
     /* animation-iteration-count: 4s; */
 }
 
@@ -65,13 +65,13 @@ img{
 @keyframes waterRising {
     from{
         background-color: #79efe0;
-    z-index: -2;
+        z-index: -2;
 
     }
     to{
-    z-index: -2;
+        z-index: -2;
 
-        background-color: #79efe0;
+        background-color: rgba(123, 239, 224, .7);
         transform: translateY(-100px);
     }
     
