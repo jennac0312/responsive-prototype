@@ -47,6 +47,9 @@ img{
     }
     to {
         background-color: white;
+        background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/03/09/Cartoon-Background-Of-Spring-Meadow-Sunshine-Digital-Art-4k-Rendered-63732449-1.png');
+        /* background-position: center; */
+        background-position: bottom;
         
     }
 }
@@ -57,7 +60,7 @@ img{
 
 
 .draining{
-    animation: draining 10s;
+    animation: draining 6s forwards;
 }
 
 
@@ -111,7 +114,7 @@ img{
     to{
         /* background-image: url('https://64.media.tumblr.com/1686a724a424593f45e24a88b58b22fb/tumblr_mt6g4rgeT41s5jjtzo1_400.gif'); */
         transform: translateY(-2000%);
-        /* background-color: white; */
+        opacity: 0;
     }
 }
 
@@ -131,7 +134,7 @@ img{
 
 .explode{
     animation: kaboom 1s forwards;
-    background-position: cover;
+    /* background-position: cover; */
 }
 
 .redButtonContainer{
@@ -139,6 +142,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-self: center;
+    height: 200px
 }
 .buttonText{
     text-align: center;
